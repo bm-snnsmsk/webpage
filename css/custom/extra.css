@@ -1,3 +1,4 @@
+/* header START */
 header.backImage{
     background-image: url('../../img/header.jpg');
     background-repeat: no-repeat;
@@ -18,6 +19,9 @@ header.backImage .backImage-heading{
     font-weight: 700;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
+/* header END */
+
+/* mainNavbar START */
 #mainNavbar{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -39,6 +43,27 @@ header.backImage .backImage-heading{
 #mainNavbar .navbar-nav .nav-item .nav-link:hover{
     color: #fa836a;
 }
+/* mainNavbar END */
+
+
+
+/* services START */
+.mySection{
+    padding: 5rem 0;
+}
+.mySection h2.s-heading{
+   font-size: 2.5rem;
+   margin-top: 0;
+   margin-bottom: 1rem; 
+}
+.mySection h3.s-subheading{
+   font-size: 1rem;
+   font-weight: 600;
+   font-style: italic;
+   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+/* services END */
+
 
 
 
