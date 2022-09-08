@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded',(e) => {
     }
     navbarMobile() ;
     document.addEventListener("scroll",navbarMobile) ;// scroll olayı varsa
+    // navbar ikonlarının seçili olmasını sağlar
     const myNavbar = document.body.querySelector("#mainNavbar") ;
     if(myNavbar){
         new bootstrap.ScrollSpy(document.body,{
