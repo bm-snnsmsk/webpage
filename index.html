@@ -398,35 +398,51 @@
             <h2 class="s-heading text-uppercase fw-bold">İletişim</h2>
             <h3 class="s-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
         </div>  
-        <form action="" id="frmContact" novalidate>
+        <form action="result.php" id="frmContact" class="needs-validation" novalidate>
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-floating mb-4">
-                        <input type="text" name="" id="name" class="form-control" placeholder="Adınız" required>
-                        <label for="name">Adınız</label>
-                        <div class="invalid-feedback" id="errName"></div>
+                        <input type="text" name="name" id="name" class="form-control" maxlength="40" placeholder="Adınız" required aria-describedby="errName">
+                        <label for="name">Adınız
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fst-italic fs-6" id="errName"></div>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="email" name="" id="email" class="form-control" placeholder="Email Adresiniz" required>
-                        <label for="email">E-mail Adresiniz</label>
-                        <div class="invalid-feedback" id="errEmail"></div>
+                        <input type="email" name="email" id="email" class="form-control" maxlength="30" placeholder="Email Adresiniz" required aria-describedby="errEmail">
+                        <label for="email">E-mail Adresiniz
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fst-italic fs-6" id="errEmail"></div>
                     </div>
                     <div class="form-floating mb-4">
-                        <input type="tel" name="" id="phone" class="form-control" placeholder="Telefonunuz" required>
-                        <label for="phone">Telefonunuz</label>
-                        <div class="invalid-feedback" id="errPhone"></div>
+                        <input type="tel" name="phone" id="phone" maxlength="15" class="form-control" placeholder="Telefonunuz" required aria-describedby="errPhone">
+                        <label for="phone">Telefonunuz
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fst-italic fs-6" id="errPhone"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-floating form-textarea mb-md-0">                       
-                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
-                        <label for="message">Mesajınız</label>
-                        <div class="invalid-feedback" id="errMessage"></div>
+                        <textarea name="message" class="form-control" maxlength="300" id="message" cols="30" rows="10" placeholder="Mesajınız" required aria-describedby="errMessage"></textarea>
+                        <label for="message">Mesajınız
+                            <span class="text-danger" aria-hidden="true">*</span>
+                            <span class="visually-hidden">zorunlu alan</span>
+                        </label>
+                        <div class="invalid-feedback fst-italic fs-6" id="errMessage"></div>
+                    </div>
+                    <div class="text-white text-end">
+                        <span id="current-character">0</span>
+                        <span> / 300</span>
                     </div>
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3">Gönder</button>
+                <button type="submit" id="btnContact" class="btn btn-danger btn-lg text-uppercase py-3 w-100 d-block">Gönder</button>
             </div>
         </form>           
     </div>
